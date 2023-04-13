@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SerehDapur">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/sereh_dapur"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sereh Dapur (Cymbopogon citratus)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Serai dapur (Cymbopogon citratus) berupa tanaman tahunan (parennial) yang hidup secara meliar dan stolonifera (berbatang semu) yang membentuk rumpun tebal dengan tinggi hingga mencapai 1 â€“ 2 meter, serta mempunyai aroma yang kuat dan wangi. Sistem perakaran tanaman sereh memiliki akar yang besar. Morfologi akarnya merupakan jenis akar serabut yang berimpang pendek dan akarnya berwarna coklat muda (Sastrapradja, 1978).\n\n     Batang tanaman sereh bergerombol dan berumbi, serta lunak dan berongga. Isi batangnya merupakan pelepah umbi untuk pucuk dan berwarna putih kekuningan. Tanaman sereh memiliki batang yang berwarna putih, namun ada juga yang berwarna putih keunguan atau kemerahan. Selain itu, batang tanaman sereh juga bersifat kaku dan mudah patah. Batang tanaman ini tumbuh tegak lurus di atas tanah atau condong, membentuk rumpun, pendek, masif, dan bulat (silindris) (Poerwanto, 2010).\n\n     Daunnya berwarna hijau dan tidak bertangkai, kesat, panjang, dan runcing, hampir menyerupai daun ilalang. Selain itu, daun tanaman ini memiliki bentuk seperti pita yang makin ke ujung makin runcing, berbau jeruk limau ketika daunnya diremas, berwarna hijau kebiru-biruan. Daunnya juga memiliki tepi yang kasar dan tajam dan lokos, namun halus pada kedua permukaannya. Berdaun tunggal, lengkap, berpelepah daun silindris, gundul, seringkali bagian permukaan dalam berwarna merah, ujung berlidah (ligula). Tulang daun tanaman sereh tersusun sejajar. Letak daun pada batang tersebar. Panjang daunnya sekitar 50-100 cm, sedangkan lebarnya kira-kira 2 cm. Daging daun tipis, serta pada permukaan dan bagian bawah daunnya berbulu halus. Helainnya lebih dari separuh menggantung (C.A. Backer, et al., 1965)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

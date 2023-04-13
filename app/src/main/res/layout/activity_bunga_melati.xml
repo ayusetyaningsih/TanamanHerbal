@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaMelati">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_melati"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Melati (Jasminum sp)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Melati merupakan tanaman bunga hias berupa perdu berbatang tegak yang hidup menahun. Di Italia melati casablanca (Jasmine officinalle), yang disebut Spansish Jasmine ditanam tahun 1692 untuk di jadikan parfum. Tahun 1665 di Inggris dibudidayakan melati putih (Jasminum sambac) yang diperkenalkan oleh Duke Casimo de’ Meici. Dalam tahun 1919 ditemukan melati Jasminum parkeri di kawasan India Barat Laut, Kemudian dibudidayakan di Inggris pada tahun 1923. Di Indonesia nama melati dikenal oleh masyarakat di seluruh wilayah Nusantara. Diantara 200 jenis melati yang telah diidentifikasi oleh para ahli botani baru sekitar 9 jenis melati yang umum dibudidayakan dan terdapat 8 jenis melati yang potensial untuk dijadikan tanaman hias. Sebagian besar jenis melati tumbuh liar di hutan-hutan karena belum terungkap potensi ekonomis dan sosialnya (Anonim, 2013).\n\n     Iklim yang baik untuk menanam melati yaitu daerah yang mempunyai curah hujan 112–119 mm/bulan dengan 6–9 hari hujan/bulan, serta mempunyai iklim dengan 2–3 bulan kering dan 5–6 bulan basah, suhu udara siang hari 28-36 oC dan suhu udara malam hari 24-30 OC, Kelembaban udara yang cocok untuk budidaya tanaman ini 50-80 %. Selain itu pengembangan budi daya melati paling cocok di daerah yang cukup mendapat sinar matahari. Tanaman melati umumnya tumbuh subur pada tanah yang bertekstur pasir sampai liat, subur, gembur, banyak mengandung bahan organik dan memiliki derajat keasaman tanah yang baik bagi pertumbuhan tanaman ini adalah pH = 5–7. Tanaman melati dapat tumbuh dan berproduksi dengan baik di dataran rendah sampai dataran tinggi pada ketinggian 10-1.600 m dpl. Meskipun demikian, tiap jenis melati mempunyai daya adaptasi tersendiri terhadap lingkungan tumbuh. Melati putih (Jasminum sambac) ideal ditanam di dataran rendah hingga ketinggian 600 m dpl (Anonim, 2013)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

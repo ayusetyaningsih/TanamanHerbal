@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jahe">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/jahe"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jahe (Zingiber officinale)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Tanaman jahe (Zingiber officinale Rosc.) termasuk dalam keluargatumbuhan berbunga (temu-temuan).Diantara jenis rimpang jahe, ada 2 jenis jahe yang telah dikenal secara umum, yaitu jahe merah (Zingiber officinale var. rubrum) dan jahe putih (Zingiber officinale var. amarum)(Gholib, 2008).Rimpang jahe termasuk kelas Monocotyledonae, bangsa Zingiberales, suku Zingiberaceae, marga Zingiber.Tanaman ini sudah lama dikenal baik sebagai bumbu masak maupun untuk pengobatan.Rimpang dan batang tanaman jahe sejak tahun 1500 telah digunakan di dalam dunia pengobatan di beberapa negara di Asia (Gholib, 2008).\n\n     Jahe merupakan tanaman berbatang semu,tinggi 30 cm sampai dengan 1 m, tegak, tidak bercabang, tersusun ataslembaran pelepah daun, berbentuk bulat, berwarna hijau pucat dan warnapangkal batang kemerahan. Akar jahe berbentuk bulat, ramping, berserat,berwarna putih sampai coklat terang.Tanaman ini berbunga majemuk berupamalai muncul di permukaan tanah, berbentuk tongkat atau bulat telur yangsempit, dan sangat tajam (Wardana,2002).Tanaman jahe membentukrimpang yang ukurannya tergantung pada jenisnya. Bentuk rimpang padaumumnya gemuk agak pipih dan tampak berbuku-buku.Rimpang jahe berkulitagak tebal yang membungkus daging rimpang, yang kulitnya mudah dikelupas(Rismunandar, 1988).\n\n     Berdasarkan bentuk, ukuran dan warna rimpang, jahe dibedakan atas tiga kultivar, yaitu jahe badak atau jahe gajah, jahe merah dan jahe emprit.Jahe merah memiliki rimpang kecil, ramping, kurang mengandung air, berwarna merah atau jingga, dan rasanya pedas.Jahe ini juga dikenal dengan sebutan jahe sunti.Kadar minyak atsiri pada jahe pedas di atas 3 ml tiap 100 gram rimpang.Jahe ini merupakan bahan penting dalam industri jamu tradisional. Umumnya dipasarkan dalam bentuk rimpang segar dan jahe kering (Lukito, 2007).\n\n     Batang semu jahe merah berbentuk bulat kecil, berwarna hijau kemerahan, dan agak keras karena diselubungi oleh pelepah daun. Tinggi tanaman mencapai 34,18 – 62,28 cm (Lantera, 2002). Daun tersusun berselang-seling secara teratur dan memiliki warna yang lebih hijau (gelap) dibandingkan dengan kedua tipe lainnya.Permukaan daun bagian atas berwarna hijau muda dibandingkan dengan bagian bawahnya.Rimpang jahe ini berwarna merah hingga jingga muda.Aromanya tajam dan rasanya sangat pedas. Kandungan minyak atsirinya lebih tinggi dibandingkan klon jahe lainnya, yakni 2,58% - 3,72% dihitung atas dasar berat kering (Lantera, 2002)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

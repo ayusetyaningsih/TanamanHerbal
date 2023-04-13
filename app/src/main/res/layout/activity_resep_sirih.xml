@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepSirih">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/sirih"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Sirih"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Menurunkan gula darah pada penderita diabetes tipe 2 \n     Peneliti melaporkan bahwa minum air rebusan daun sirih, atau daun sirih yang dikeringkan kemudian digerus menjadi bubuk, bisa membantu menurunkan kadar gula darah pada orang yang baru terdiagnosis diabetes tipe 2. Daun sirih juga melindungi kesehatan hati. Manfaat daun sirih untuk diabetes ini datang dari kandungan antioksidan tingginya yang bisa mengurangi stres oksidatif penyebab kerusakan sel-sel tubuh pemicu ketidakseimbangan hormon insulin. Penelitian yang sama juga melaporkan bahwa daun sirih tidak mempunyai efek samping apapun yang perlu dikhawatirkan. \n\n2. Menurunkan kolesterol dan tekanan darah \n     Seperti yang telah disebutkan di atas, daun sirih mengandung tinggi antioksidan. Dalam tubuh, antioksidan eugenol yang bekerja melawan radikal bebas pemicu stres oksidatif penyebab berbagai penyakit kronis. Salah satu manfaat daun sirih yang terkait hal ini adalah menurunkan kadar tigliserida dan kolesterol LDL, lemak jahat dalam tubuh. Daun sirih juga diketahui dapat membantu mengurangi jumlah lemak total dalam darah. Kolesterol dan trigliserida tinggi dapat meningkatkan risiko penyakit kardiovaskular, hipertensi, stroke, penyakit jantung koroner, dan gagal jantung. Sebagai gantinya, daun sirih merah dan daun sirih hijau bekerja meningkatkan kolesterol baik dalam darah yang menjaga kesehatan jantung. \n\n3. Penangkal kanker \n     Antioksidan eugenol yang terkandung dalam rebusan dauh sirih hijau dan merah dapat membantu memerangi radikal bebas yang menjadi pemicu kanker pada penderita diabetes tipe 2. \n\n4. Mempercepat penyembuhan luka bakar \n     Manfaat daun sirih lainnya adalah mempercepat penyembuhan luka, terutama luka bakar. Hal ini masih dikaitkan dengan kandungan antioksidannya. Seseorang yang mengalami luka bakar juga mengalami stres oksidatif yang cukup tinggi dalam tubuhnya. Stres oksidatif akan menghambat proses penyembuhan luka. Daun sirih adalah antiseptik yang luar biasa, yang juga mampu memberikan perlindungan ganda dari infeksi kuman karena tinggi kandungan polifenolnya. \n\n5. Membantu menurunkan depresi \n     Beberapa riset menunjukkan bahwa daun sirih bisa membantu mengendalikan gejala depresi pada orang-orang yang memilikinya. Salah satu penelitian melaporkan, mengunyah dauh sirih atau meminum air rebusan daun sirih dapat memicu otak untuk memproduksi hormon bahagia serotonin yang lebih banyak."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Teh Celup Daun Sirih \n\nLangkah-langkah membuat teh celup daun sirih: \n1. Cuci daun sirih merah yang cukup tua hingga bersih, lalu iris kecil-kecil. \n2. Jemur sampai kering, lalu remas-remas dengan tangan sampai hancur (menjadi bubuk kasar). \n3. Agar rasanya lebih segar, bisa ditambahkan teh hijau, mint, atau bunga melati kering. \n4. Selanjutnya, masukkan bubuk daun tersebut ke dalam kantong teh celup. \n5. Pemakaiannya sama dengan teh celup pada umumnya, yakni diseduh dan diminum selagi hangat. \n\n2. Obat Kumur \n\nLangkah-langkah membuat obat kumur: \n1. Cuci 5 lembar daun sirih hingga bersih, lalu rebus dengan air dua gelas (400 ml) sampai mendidih dan tersisa satu gelas. \n2. Dinginkan air rebusannya, lalu gunakan sebagai obat kumur tiga kali sehari pada pagi, siang, dan sore hari. \n3. Ramuan ini sangat baik untuk mengobati gusi berdarah, gigi berlubang, sariawan, radang pada tenggorok, dan bau mulut."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

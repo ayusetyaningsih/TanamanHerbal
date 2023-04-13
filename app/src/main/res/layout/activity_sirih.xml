@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sirih">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/sirih"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sirih (Piper betle L)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Sirih adalah tanaman asli Indonesia yang tumbuh merambat atau bersandar pada batang pohon lain. Sebagai budaya daun dan buahnya biasa dikunyah bersama gambir, pinang, tembakau dan kapur. Di Indonesia, sirih merupakan flora khas provinsi Kepulauan Riau. Masyarakat Kepulauan Riau sangat menjunjung tinggi budaya upacara makan sirih khususnya saat upacara penyambutan tamu dan menggunakan sirih sebagai obat berbagai jenis penyakit. Walaupun demikian tanaman sirih banyak dijumpai di seluruh Indonesia, dimanfaatkan atau hanya sebagai tanaman hias. Sirih digunakan sebagai tanaman obat (fitofarmaka); sangat berperan dalam kehidupan dan berbagai upacara adat rumpun Melayu.\n\n     Piper betle L. adalah tanaman menjalar abadi milik keluarga Piperaceae, dibudidayakan di Myanmar untuk daunnya, digunakan terutama untuk mengunyah dan penggunaan obat. Piper betle L. berasal dari Kepulauan Melayu (Chibber, 1912). Itu umumnya ditanam di seluruh Wilayah Timur tetapi tidak dikenal sebagai tanaman liar (Dassanayake, 1985). Sirih secara luas dibudidayakan di India, Bangladish, Pakistan, Malaysia, Indonesia, Vietnan, Laos, Kampu-chea, Thailand, Myanmar dan Singapura, dll. Untuk daunnya yang digunakan sebagai pengunyah. (Kumar et al, 2010). Ada banyak kultivar dengan daun, ukuran dan bentuk yang berbeda warna. Beberapa kultivar memiliki urat merah dan tangkai. Batang sangat membengkak di node, dan papillose ketika muda. Daun-daun berganti-ganti, sederhana dan hijau kekuningan menjadi hijau terang. \n\n     Piper betle memiliki ciri khas yaitu daunnya kerap kali berbau aromatis atau rasa pedas (Munawaroh dan Yuzammi, 2017). Aroma daun sirih disebabkan oleh adanya minyak esensial, yang terdiri dari fenol dan terpene (Naidu, 2010). Selain itu, memiliki ciri khas mengandung senyawa metabolit sekunder yang biasanya berperan sebagai alat pertahanan diri agar tidak dimakan oleh hewan (hama) ataupun sebagai agen untuk bersaing dengan tumbuhan lain dalam mempertahankan ruang hidup. Menurut Hutapea (2000), senyawa metabolit sekunder yang dihasilkan oleh tanaman sirih berupa saponin, flavonoid, polifenol dan minyak atsiri triterpenoid, minyak atsiri (yang terdiri atas khavikol, chavibetol, karvakrol, eugenol, monoterpena,estragol), seskuiterpen, gula, dan pati.\n\n     Ekstrak daun sirih telah dikembangkan dalam beberapa bentuk sediaan misal pasta gigi, sabun, obat kumur karena daya antiseptiknya. Sediaan perasan, infus, ekstrak air-alkohol, ekstrak heksan, ekstrak kloroform maupun ekstrak etanol dari daun sirih mempunyai aktivitas antibakteri terhadap gingivitis, plak dan karies (Suwondo et.al., 1991)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

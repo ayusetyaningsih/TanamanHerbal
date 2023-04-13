@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepTemulawak">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/temulawak"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Temulawak"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Memperlancar Proses Pencernaan \n     Kandungan serat juga kurkumin yang tinggi pada temulawak dapat membantu memperlancar proses pencernaan. Khasiat temulawak yang satu ini cocok bagi kamu yang memiliki masalah susah buang air besar.\n\n2. Meningkatkan Daya Tahan Tubuh \n     Salah satu manfaat dari temulawak yang terkenal adalah ia mampu meningkatkan daya tahan tubuh kita dan menghindari berbagai macam penyakit. Untuk mengonsumsinya, kamu bisa mengolah temulawak menjadi minuman dengan cara merebusnya. \n\n3. Sebagai Antibakteri dan Antijamur \n     Manfaat temulawak yang dapat kamu temukan adalah sebagai antibakteri dan antijamur. Adanya senyawa xanthorrizol pada temulawak ternyata cukup efektif untuk membasmi bakteri jenis Staphylococcus dan Salmonella. \n\n4. Mencegah Kanker \n     Salah satu manfaat temulawak untuk kesehatan berikutnya adalah mencegah kanker. Kandungan antioksidan yang tinggi dalam temulawak mampu menyusutkan sel kanker dan mencegah terbentuknya kanker di badan. \n\n5. Mengatasi Peradangan \n     Senyawa anti radang pada temulawak mendatangkan manfaat yang mana mampu mengatasi peradangan. Senyawa tersebut dapat menghambat produksi prostaglandin E2 yang memicu peradangan akibat luka. \n\n6. Menambah Nafsu Makan \n     Salah satu manfaat temulawak yang terkenal yakni mampu menambah nafsu makan. Kandungan atsiri dalam temulawak kerap dimanfaatkan oleh orang-orang yang kehilangan nafsu makan umumnya pada anak-anak. \n\n7. Mengatasi Radang Sendi \n     Mengkonsumsi temulawak dipercaya dapat meredakan radang sendi. Temulawak dipercaya memiliki khasiat yang sama dengan ibuprofen yang sering diberikan pada pasien osteoarthritis.\n\n8. Menghilangkan Noda Hitam di Wajah \n     Minyak atsiri pada temulawak juga mampu mengatasi flek atau noda hitam di wajah. Flek hitam biasanya timbul karena meningkatnya produksi melanin akibat sinar UV. \n\n9. Menghilangkan Nyeri Haid \n     Sifat temulawak yang dingin dapat meringankan nyeri haid. Tubuh akan terasa rileks dan perlahan-lahan nyeri haid akan hilang.Umumnya temulawak akan dicampur bersama kunyit lalu direbus untuk diminum selama nyeri haid berlangsung."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cara Mengkonsumsi"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="Temulawak dapat diolah menjadi berbagai macam jenis minuman, di antaranya wedang jahe temulawak merupakan salah satu yang paling populer. Temulawak dapat diolah menjadi berbagai macam jenis minuman, di antaranya wedang jahe temulawak merupakan salah satu yang paling populer. \n\nBahan-bahan yang diperlukan : \n- 1 ruas besar jahe \n- 2 ruas kunyit \n- 1 ruas besar temulawak \n- 1 buah jeruk nipis \n- 2 sendok makan madu \n- 700 ml air \n\nLangkah-langkah membuat wedang jahe temulawak: \n1. Pertama-tama, bersihkan seluruh bahan utama. Kunyit, jahe dan temulawak dapat digeprek dan iris tipis. Lalu, bakar sebentar agar aroma dan rasanya jadi lebih kuat. \n2. Selanjutnya, rebus 700 ml air mineral, lalu masukkan kunyit, jahe dan temulawak dan rebus sekitar 10 menit menggunakan api kecil hingga melarut. \n3. Setelah semua telah larut, kamu bisa langsung menyaring bahan yang telah direbus dan memisahkan air hasil rebusan.\n4. Tambahkan perasan jeruk nipis dan madu. Wedang jahe temulawak siap untuk dinikmati!"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

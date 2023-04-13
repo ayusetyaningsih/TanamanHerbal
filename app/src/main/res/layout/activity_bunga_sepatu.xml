@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaSepatu">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_sepatu"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Sepatu (Hibiscus rosa-sinensis)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Bunga kembang sepatu (Hibiscus rosa-sinensis L.) adalah tanaman yang tumbuh subur di beberapa negara seperti Indonesia yang salah satunya dapat digunakan sebagai obat herbal. Bunga kembang sepatu berkhasiat untuk bisul, radang selaput lendir hidung, sariawan, mimisan, gondongan (Dalimarta, 2005). Bagian bunga juga dimanfaatkan untuk mengatasi disentri, infeksi saluan kemih, bisul, melancarkan haid (Widjayakusuma, 1994). Tanaman kembang sepatu mempunyai kandungan flavonoid, daunnya mengandung saponin dan polifenol, bunganya mengandung polifenol, sedangkan akarnya mengandung tanin, saponin, skopoletin, cleomiscosin A, dan cleomiscosin C (Agoes, 2010). Menurut Gajalakshmi dan Ruban, (2011) senyawa yang berperan dalam aktivitas antibakteri dari bunga kembang sepatu adalah flavonoid, alkaloid, tanin.\n\n     Menurut penelitian sebelumnya, ekstrak etanolik bunga kembang sepatu dapat menghambat pertumbuhan Staphylococcus aureus pada media agar dengan kadar 50 mg/sumuran dan 100 mg/sumuran nutrient broth dengan zona hambat 26 mm dan 29 mm (Ahmed et al., 2010). Pada penelitian lainnya menunjukkan ekstrak etanolik bunga kembang sepatu dapat menghambat pertumbuhan Staphylococcus aureus dengan metode difusi pada volume larutan uji sebanyak 50 mikroliter dengan konsentrasi 25% dan 50% memiliki zona hambat yaitu 18 mm dan 20 mm (Samsumaharto dan Hartanto, 2010)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaKecombrang">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_kecombrang"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Kecombrang"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Kecombrang merupakan tanaman tahunan dengan ketinggian 1-3 meter. Tanaman ini banyak ditemukan di daerah pegunungan atau daerah-daerah rindang dekat air dengan ketinggian 800 meter di atas permukaan air laut (Tampubolon et al.,1983 dalam Hudaya 2010). Bunga kecombrang dengan nama latin Etlingera elatior merupakan salah satu keluarga Zingiberacea yang asli dari Indonesia. Bunga kecombrang disetiap wilayah di Indonesia memiliki nama tersendiri diantaranya yaitu kencong atau kincung di Sumatra Utara, kecombrang di Jawa, honje di Sunda,bongkot di Bali, sambuang di Sumatra Barat dan bunga kantan di Malaysia. Orang barat menyebut tanaman ini torch ginger atau torch lily karena bentuk bunganya yang mirip obor serta warnanya merah memukau (Sukandar, 2011). \n\n     Setiap tumbuhan menghasilkan salah satu hasil dari proses metabolisme yang bermanfaat bagi kelangsungan hidup tanaman tersebut serta jika dikonsumsi mampu memberikan manfaat positif bagi kesehatan yaitu metabolit sekunder. Metabolit sekunder yang berasal dari proses metabolisme sekunder merupakan senyawa antara dari proses metabolisme primer dari pemecahan karbohidrat, protein dan lemak. Beberapa senyawa antara yang digunakan dalam proses metabolisme sekunder yaitu eritrosa-4-fosfat, fosfoenolpiruvat dan 3-fosfogliserat (Taiz Zeiger, 2006). Pada bunga kecombrang juga terindikasi memiliki sejumlah senyawa antioksidan yang berfungsi meghambat terjadinya proses oksidasi. Senyawa antioksidan yang terindikasi didalam bunga kecombrang termasuk dalam sejumlah metabolit sekunder dari bunga kecombrang. "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

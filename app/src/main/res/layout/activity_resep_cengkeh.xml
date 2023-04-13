@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepCengkeh">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/cengkeh"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Cengkeh"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Melindungi dari Kanker \n     Cengkeh diperkaya oleh antioksidan eugenol untuk melawan radikal bebas dalam tubuh yang bisa memicu perkembangan kanker. Selain eugenol, cengkeh juga mengandung vitamin C sebagai antioksidan untuk membantu menetralisir radikal bebas. Kekuatan antioksidan dalam cengkeh bahkan dilaporkan lima kali lebih efektif daripada vitamin E dan jenis antioksidan lainnya. \nPenumpukan radikal bebas dalam tubuh dapat merusak kode DNA dan menyebabkan stres oksidatif sehingga memicu berbagai penyakit kronis. Mulai dari radang sendi, penyakit jantung, aterosklerosis, stroke, hipertensi, tukak lambung, penyakit Alzheimer, penyakit Parkinson, kanker, sampai menyebabkan penuaan.\n\n2. Membunuh Bakteri Penyebab Penyakit \n     Cengkeh memiliki sifat antibakteri yang mampu menghentikan infeksi. Sebuah penelitian menunjukkan bahwa minyak esensial cengkeh efektif membunuh bakteri E. coli yang dapat menyebabkan kram perut, diare, hingga kelelahan. \nCengkeh juga membantu menjaga kesehatan mulut dengan menghentikan pertumbuhan dua jenis bakteri penyebab plak gigi dan penyakit gusi (gingivitis). Jika Anda tidak ingin mengunyah cengkeh, gunakanlah obat kumur yang mengandung ekstrak cengkeh untuk mendapatkan manfaat yang satu ini. \n\n3. Meningkatkan Kesehatan Hati \n     Tak hanya melindungi tubuh dari kanker, eugenol dalam cengkeh dapat membantu meningkatkan kesehatan hati. Sebuah penelitian hewan yang dilakukan pada tikus melaporkan bahwa minyak cengkeh dapat meningkatkan fungsi hati dan mengurangi peradangan. Penelitian lain menunjukkan bahwa eugenol membantu meredakan gejala sirosis hati. Penelitian lain yang dilakukan pada manusia menemukan bahwa mengonsumsi suplemen eugenol selama satu minggu menurunkan kadar GST, enzim yang sering menjadi tanda penyakit hati. \nNamun demikian, perlu diingat bahwa eugenol dapat berbalik menjadi racun bagi hati jika dikonsumsi dalam dosis tinggi. Satu studi kasus menunjukkan bahwa 5-10 ml minyak cengkeh pada anak-anak dapat menyebabkan kerusakan hati yang serius. \n\n4. Menjaga Kesehatan Tulang \n     Pengeroposan tulang dapat meningkatkan risiko Anda mengalami osteoporosis. Nah, sebuah penelitian yang dilakukan pada hewan melaporkan bahwa senyawa aktif dalam cengkeh telah terbukti membantu menjaga dan meningkatkan kepadatan massa tulang. Kandungan mangan dalam cengkeh juga membantu proses pembentukan tulang, dan sangat penting bagi kesehatan tulang. \n\n5. Mengobati Sakit Maag \n     Sakit maag paling sering disebabkan oleh penipisan lendir lambung yang dipengaruhi oleh beragam faktor, seperti stres dan infeksi. \nSebuah penelitian pada hewan menunjukkan bahwa minyak esensial cengkeh dapat meningkatkan produksi lendir lambung yang berfungsi sebagai penghalang efek asam lambung, sekaligus mencegah erosi pada dinding lambung akibat cairan asam lambung."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="Resep Minuman Teh Cengkeh \n\n Bahan-bahan yang dibutuhkan : \n- 2 gelas air putih \n- 4-5 butir cengkeh \n- 1/2 batang kayu manis \n- 1/2 ruas jahe \n- 1 buah jeruk lemon \n- 1 sendok teh madu \n\nCara Membuatnya : \n1. Tuang 2 gelas air ke dalam panci yang dalam dan didihkan. \n2. angkat air dari kompor lalu tambahkan 4-5 siung cengkeh, jahe parut, dan kayu manis yang dihancurkan kasar ke dalam panci. \n3. Biarkan bahan terendam selama 15 sampai 20 menit. \n4. Saring air dalam cangkir dan tambahkan 1 sendok teh madu dan 1 sendok makan jus lemon kedalamnya. \n5. Nikmati teh cengkeh selagi hangat."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

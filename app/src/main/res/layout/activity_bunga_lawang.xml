@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaLawang">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_lawang"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Lawang (Illicium verum)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Tanaman ini merupakan jenis pohon-pohonan atau perdu, dengan tinggi mencapai  4-6  m.  Memiliki  daun  tunggal,  berbintik  dengan  ujung  runcing. Bunganya  berwarna  kuning  kehijau-hijauan.  Buah  terdiri  atas  6-8 folikel, masing-masing  folikel  berisi  1  biji  (Tjitrosoepomo,  2005).  Buah  berdiameter 2,5-4,5  cm  (Ong, 2008).  Buah  masak berwarna  coklat  dan  akan  pecah  pada bagian  tengahnya  yang  bentuknya  menyerupai  bintang.  Pada  setiap  folikel buah  yang  pecah  tadi  terdapat  biji berwarna coklat,  mengkilap  dan  tidak berbulu (Ali, et al, 2010).\n\n     Tanaman ini tumbuh di daerah tropik serta subtropik pada ketinggian daratan 2000 meter,dengan curah hujan 1500-2200 mm,suhu 12-18 celcius dan pH 4 - 5. Rempah ini banyak digunakan di dalam masakan negara-negara Asia. Bunga lawang adalah salah satu bumbu tradisional masakan Cina yaitu ngo hiong yang terdiri dari lima jenis rempah. Nama Bunga Lawang dalam Bahasa Tionghoa adalah ba jiao atau bat gok yang memiliki arti delapan tanduk, sesuai dengan bentuknya yang memiliki delapan kelopak. Bunga Lawang mempunyai bau khas yang kuat. Dari asalnya di Tiongkok, rempah ini mulai diperkenalkan di Eropa pada awal abad ke-17 dan sejak saat itu mulai meraih popularitas. Tanaman dari rempah ini termasuk dalam golongan pohon -pohonan atau perdu. Pohon ini memiliki tinggi mencapai 4-6 m dan memiliki warna coklat sedikit kemerah-merahan. \n\n     Memiliki daun tunggal, berbintik dengan ujung runcing. Bunganya berwarna kuning kehijau hijauan.Bunga lawang berkembang-biak melalui biji benih. Buahnya dipetik sebelum ranum dan dikeringkan dengan bantuan cahaya matahari.Buahnya terdiri atas 6-8 folikel, masing-masing folikel berisi 1 biji. Minyak yang dihasilkan dijadikan bahan perisa dalam minuman. Ekstra dari bunga lawang mempunyai efek farmokologi yang luas sehingga bisa menjadi antimikrobia ,antioksidan dan insektisida."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayuManis">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/kayu_manis"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kayu Manis (Cinnamomum verum)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Tanaman kayu manis digolongkan ke dalam jenis tanaman rempah-rempah yang mempunyai banyak manfaat dan dapat digunakan sebagai obat tradisional. Spesies tanaman kayu manis (Cinnamomum sp.) yang dikenal dunia ada sebanyak 54 spesies dan yang terdapat di Indonesia hanya 12 spesies dari jumlah keseluruhan. Tiga spesies yang paling terkenal di pasar dunia yaitu spesies Cinnamomum burmanni yang ada di Indonesia dikenal dengan nama cassiavera, di Sri Langka dan Seycelles terdapat spesies Cinnamomum zeylanicum dan spesiesCinnamomum cassia dari China. Di Indonesia tanaman kayu manis jenis Cinnamomum burmanni banyak dibudidaya di daerah Sumatera Barat, Jambi dan Sumatera Utara. Indonesia merupakan negara pengekspor kayu manis jenis Cinnamomum burmanni paling utama di dunia yang mampu menguasai pasar dunia (Aprianto, 2011). Jenis kayu manis yang ada di Indonesia memiliki keunggulan yaitu pada ketebalan kayu yang dimiliki. Kayu manis Indonesia lebih tebal dari tanaman kayu manis lainnya yang ada di dunia (Rismunandar dan Paimin, 2001).\n\n     Tanaman kayu manis mempunyai nama yang berbeda – beda, tergantung dari mana asal tanaman kayu manis tersebut tumbuh. Di Sumba menyebut tanaman kayu manis dengan sebutan kaninggu sumba, di Sunda menamai kayu manis dengan sebutan kiamis, di Melayu disebut dengan holim, holim manis, modang siak-siak (Batak), kanigar, madang kulit manih (Minangkabau) dan di Jawa disebut kaneel, huru mentek. Di Nusa tenggara disebut kesingar, kecingar, cingar (Bali), onte (Sasak) (Nainggolan, 2008).\n\n     Tanaman kayu manis terdiri dari batang, daun, bunga dan buah. Tinggi dari pohon ini berkisar antara 5 – 15 meter dan dapat tumbuh dengan ketinggian 2000 meter dari permukaan laut. Tanaman ini dapat tumbuh pada tanah latosol, andosol, podsolik merah kuning dan mediteran yang mempunyai topografi miring serta air tanah yang dalam (Suriadi, 2006).\n\n     Batang kayu manis berwarna hijau kecoklatan, bercabang, memiliki kulit yang berwarna abu – abu tua serta memiliki bau yang khas. Bagian kulit batang mengandung dammar, lender dan minyak atsiri, kulit dari batang kayu manis ini yang banyak dimanfaatkan. Daunnya tunggal, kaku seperti kulit, permukaan atas daun licin dan rata, panjang daun 4 –24 cm dan lebarnya 1,5 – 6 cm, bentuk daun meruncing pada bagian ujung dan pangkal. Ruas daun memiliki tiga tulang daun yang tumbuh melengkung dengan panjang ruas berkisar antara 0,5 – 1,5 cm. Daun yang masih muda akan berwarna merah tua atau hijau ungu, sedangkan daun yang sudah tua akan berwarna hijau (Rismunandar, 2001).\n\n     Bunga Cinnamomumm burmanni berwarna kuning, muncul dari sela – sela daun, dan merupakan bunga majemuk yang memiliki kelamin sempurna dengan ukuran yang kecil, benangsarinya berjumlah 12 helai, berambut halus, kotak sari memiliki empat ruang. Buah Cinnamomum burmanni termasuk buah buni, berbiji satu dan berdaging. Bentuknya bulat memanjang, panjangnya berkisar antara 1,3 – 1,6 cm dengan diameter 0,35 – 0,75 cm, buah yang masih muda akan berwarna hijau sedangkan buah yang sudah tua akan berubah warna menjadi ungu tua sampai hitam. Biji buah Cinnamomum burmanni berukuran kecil(Qomar, 2017)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

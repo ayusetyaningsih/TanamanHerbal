@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaSaffron">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_saffron"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Saffron"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Crocus sativus L. saat ini sedang banyak diperbincangkan oleh masyarakat luas. Crocus sativus L. atau yang lebih dikenal dengan saffron dengan aroma, warna dan rasa yang unik dianggap sebagai pengantar baru untuk masakan dan obat-obatan pada abad ke 211. Faktanya, Saffron (Crocus sativus Linn.) telah digunakan sebagai bahan makanan di berbagai belahan dunia sejak zaman kuno. Saffron juga digunakan dalam pengobatan tradisional dalam perawatan berbagai jenis penyakit. Saffron telah tertulis dalam resep tradisional termasuk obat-obatan Cina, Ayurveda dan Yunani. Di Ayurveda, saffron digunakan untuk mengobati penyakit kronis seperti asma dan arthritis. Saffron juga digunakan untuk mengobati batuk dan demam.\n\n     Crocus sativus telah dilaporkan sebagai obat penenang, ekspektoran, anti asma, antikanker, dan antihiperlipidemia. Penggunaan Saffron sebagai pengobatan untuk sekitar 90 penyakit telah terungkap dalam rentang waktu 4000 tahun. Saffron digunakan secara luas sebagai tanaman obat untuk memperbaiki kesehatan manusia terutama di Asia. Tanaman ini dikenal sebagai bumbu paling mahal di dunia dan telah dijuluki Emas Merah di Iran. Diperkirakan Iran memproduksi sekitar 76% dari total produksi saffron di dunia setiap tahunnya. Di Indonesia pun saat ini sudah mulai dikonsumsi oleh banyak orang. Oleh karena itu, diharapkan dengan adanya review artikel ini semakin banyak yang mengetahui kandungan dan juga manfaat dari saffron. Review ini membahas mengenai kandungan yang terdapat dalam Saffron dan aktivitas farmakologi yang dimiliki oleh tanaman Saffron.\n\n     Analisis kimia menunjukkan adanya lebih dari 34 komponen volatile termasuk terpen, alkohol terpen dan esternya dalam saffron. Metodologi dan teknik yang digunakan untuk analisis metabolit saffron yaitu menggunakan teknik kromatografi dan spektroskopi seperti TLC, HPLC, GC-MS, LC-MS dan NMR5. Empat kandungan utama yang terdapat dalam Saffron yaitu crocin (monoglycosyl atau di-glycosyl polyene ester), crocetin (prekursor asam dikarboksilat karotenoid alami crocin), picrocrocin (prekursor glikosida monoterpen dari safranal dan produk degradasi zeaxanthin) dan safranal. Crocin sebagai pemberi warna pada saffron merupakan karotenoid yang larut dalam air karena memiliki kandungan glikosil yang tinggi. Picocrocin merupakan zat utama yang bertanggungjawab terhadap rasa saffron serta safranal merupakan minyak volatil yang bertanggungjawab terhadap aroma saffron."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

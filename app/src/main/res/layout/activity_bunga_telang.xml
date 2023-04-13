@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaTelang">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_telang"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Telang (Clitoria ternatea)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Bunga telang merupakan bunga majemuk, terbentuk pada ketiak daun, memiliki tangkai silindris, panjangnya kurang lebih 1,5 cm, memiliki kelopak berbentuk corong, mahkota berbentuk kupu-kupu dan berwarna biru, tangkai benang sari berlekatan membentuk tabung, kepala sari bulat, tangkai putik silindris, kepala putik bulat (Gambar 1). Buah berbentuk polong, panjang 7-14cm, bertangkai pendek, buah yang masih muda berwarna hijau setelah tua berubah warna menjadi hitam (Anonim, 2012). \n\n     Tanaman bunga telang (Clitoria ternatea) berasal dari Amerika Selatan bagian tengah yang menyebar ke daerah tropik sejak abad 19, terutama ke Asia Tenggara termasuk Indonesia. Tanaman ini tumbuh subur di bawah sinar matahari penuh, tetapi dapat tumbuh di bawah naungan seperti di perkebunan karet dan kelapa. Potensi bunga telang sebagai pakan yang baik karena memiliki nilai nutrisi yang tinggi dan juga sangat disukai ternak (Suarna, 2005).\n\n     Bunga telang termasuk tumbuhan monokotil dan mempunyai bungayang berwarna biru, putih dan coklat. Bunga telang merupakan bungaberkelamin dua (Hermaphroditus) karena memiliki benang sari (alat kelaminjantan) dan putik (alat kelamin betina) sehingga sering disebut dengan bungasempurna atau bunga lengkap. Daun bunga telang termasuk daun tidak lengkapkarena tidak memiliki upih daun, hanya memiliki tangkai daun (Petiolus) dan helai daun (Lamina). Akar pada tumbuhan bunga telang termasuk akar tunggang dan warnanya putih kotor. Bagian-bagian dari akar bunga telangyaitu leher akar, batang akar atau akar utama, ujung akar, serabut akar. Biji bunga telang berbentuk seperti ginjal, pada saat masih muda berwarna hijau, setelah tua bijinya berwarna hitam. Biji bunga telang tidak dapat dipergunakan sebagai pakan ternak karena mengandung anti nutrisi berupa tanin dan tripsin inhibitor yang menyebabkan ternak mencret (Maced dkk., 1992).\n\n     Bunga telang juga digunakan sebagai tanaman hias dan pupuk hijau, karena warna bunga yang menarik sehingga digunakan sebagai tanaman hias (Michael dan Kalamani, 2003). Menurut Suebkhampet dan Sotthibandhu (2011), warna biru dari bunga telang menunjukkan keberadaan dari antosianin.Ekstrak kasar dari bunga telang dapat digunakan sebagai alternatif pewarna untuk pewarnaan preparat sel darah hewan. Melihat manfaat, sifat dari bungatelang yang mudah tumbuh di Indonesia, dan aman untuk dikonsumsi maka antosianin dari bunga telang berpotensi untuk dijadikan pewarna alami pada bahan pangan. Warna biru dari bunga telang telah dimanfaatkan sebagai pewarna biru pada ketan di Malaysia. Bunga telang juga dimakan sebagai sayuran di Kerala (India) dan di Filipina (Lee dkk., 2011).\n\n     Bunga telang memiliki warna putih atau biru yang jelas dan ukuran yang relatif besar, sehingga digunakan sebagai tanaman hias di seluruh dunia. Di Asia Tenggara, pigmen biru bunga biasanya digunakan sebagai bahan pewarna makanan karena stabilitas tinggi. Ternatins adalah antosianin biru ditemukan di kelopak bunga telang (Srivastava dan Pande, 1977). Antosianin ada enam yaitu A1, A2, B1, B2, D1 dan D2 itu terisolasi dan struktur ini ditandai sebagai malonylated delphinidin 3,3,5-triglucosides memiliki 3,5-sisi rantai dengan alternatif d-glukosa dan asam p-coumaric (Terahara dkk., 1989).\n\n     Bunga telang atau biasa disebut Blue Pea Flower merupakan jenis bunga dalam familli Fabaceae yang bertumbuh merambat dengan tinggi 6 meter, rantinghalus, dan daun majemuk (Zussiva dkk., 2012). Pigmen yang terkandung di dalamnya meliputi flavanoid, karotenoid dan betalain (Yoshikazu, 2005 dalam Zussiva dkk., 2012). Menurut Suebkhampet dan Sotthibandhu 2011 dalam Hartono dkk., 2013, warna biru dari bunga telang disebabkan karena adanya pigmen antosianin. Penggunaan ekstrak bunga telang tidak akan mempengaruhi aroma dan cita rasa makanan karena ekstrak bunga telang hanya mengandung zat warna antosianin apabila bunga sudah di ekstrak terlebih dahulu (Andarwulan, 2013 dalam Hartono dkk., 2013). Kandungan antosianinpada bunga telang adalah sebesar 227,42 mg/kg (Vankar dan Srivastava, 2010 dalam Sapiee, 2013). "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

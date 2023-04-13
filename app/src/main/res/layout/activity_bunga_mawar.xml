@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaMawar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_mawar"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Mawar (Rosa)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Mawar (Rosa sp.) dijuluki ratu segala bunga karena keindahannya, keanggunan dan keharumannya. Tanaman hias ini memiliki nilai ekonomi yang tinggi, diminati konsumen dan dapat dibudayakan secara komersial dan terencana sesuai dengan permintaan pasar (Santika, 1996). Berdasarkan kegunaannya mawar dikelompokkan kedalam bunga potong, mawar taman, mawar tabur dan mawar bahan komestik (Marlina, dkk., 2009).\n\n     Tanaman mawar dapat diperbanyak dengan cara stek, cangkok, okulasi dan penyambungan. Namun pada umunya perbanyakan mawar dilakukan dengan cara penyambungan. Mawar merupakan tanaman tahunan (parennial) yang merupakan struktur batang berkayu keras, berduri, bercabang banyak, menghasilkan bunga, buah dan biji secara cukup banyak antara lain Rosa odorata, R. Odorata ochroleuca, dan R. Foetida pesiana (di Amerika Serikat), R. Vilosa dan R. Canina (di Turki), R.Damascena dan R. Alba (di Alania) (Anonim, 2006).\n\n     Mawar (Rosa sp.) merupakan salah satu bunga potong yang banyak diminati masyarakat, yang seringkali digunakan sebagai bunga penghias acara formal seperti seminar, lokakarya maupun non formal seperti pengantin dan beberapa acara adat. Jika acara telah usai atau bunga mawar disimpan/ dipajang beberapa hari akan menjadi layu dan jatuh harga jualnya. Padahal bunga mawar sortiran (tidak segar lagi) tersebut, ternyata masih mengandung pigmen antosianin berjenis Malvidin dan Sianidin glikosida (Saati, 2011).\n\n     Komponen terbanyak dalam mahkota bunga mawar segar antara lan air (83-85%), vitamin, β-karoten, cyanins (antosianin), total gula 8-12%, minyak atsiri sekitar 0,01-1,00% (citronellol, eugenol, asam galat dan linalool) (Sari dan Saati, 2003). Pigmen antosianin bunga mawar merah mempunyai sifat sinergis dengan asam sitrat, yang terbukti berfungsi sebagai antioksidan ( Saati dkk, 2011).\n\n     Beberapa bahan kimia yang terkandung dalam bunga mawar di antaranya tannin, geraniol, nerol, citronellol, asam geranik, terpene, flavonoid, pektin polyphenol, vanillin, karotenoid, stearopten, farnesol, eugenol, feniletilakohol, vitamin B, C, E,dan K. Dengan banyaknya kandungan yang terdapat dalam bunga mawar merah, maka bunga mawar merah tersebut dapat dijadikan sebagai bahan baku obat, antara lain sebagai pengobatan aromaterapi, anti kejang, pengatur haid, menyembuhkan infeksi, menyembuhkan sekresi empedu, dan menurunkan panas badan (daun dan kelopak bunga mawar) (Rukmana, 2005)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

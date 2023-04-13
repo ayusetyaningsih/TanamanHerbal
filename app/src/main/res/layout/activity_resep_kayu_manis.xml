@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepKayuManis">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/kayu_manis"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Kayu Manis"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Dapat Membantu Mengurangi Efek PCOS \n     Menurut PCOS Awareness Association manfaat rebusan kayu manis yang dicampur dengan madu madu dapat membantu mengurangi efek PCOS. Menurut sebuah penelitian yang diterbitkan dalam Journal Fertility and Sterility, air kayu manis mengurangi resistensi insulin pada wanita penderita PCOS.\n\n2. Meningkatkan Daya Tahan Tubuh \n     Kandungan antioksidan polifenol dan proanthocyanidins yang ada di dalam kayu manis dapat meningkatkan sistem kekebalan tubuh. Selain itu, sifat antivirus, antibakteri dan antijamur di dalam air rebusan kayu manis dapat membantu mengurangi kemungkinan mengembangkan berbagai bahaya kesehatan seperti gangguan pernapasan, masalah jantung dan lainnya. \n\n3. Mengurangi Kram Saat Menstruasi \n     Menurut sebuah penelitian di National Center for Biotechnology Information, wanita yang rajin mengkonsumsi air rebusan kayu manis setiap hari dapat membantu mengurangi efek kram menstruasi. Manfaat rebusan kayu manis terbukti dapat membantu meringankan kram menstruasi yang menyakitkan dan gejala PMS. Ini juga dapat membantu mengurangi perdarahan menstruasi, serta mual dan muntah selama menstruasi. \n\n4. Dapat Mengurangi Efek Penyakit Parkinson \n     Penyakit Parkinson adalah kelainan sistem saraf progresif yang memengaruhi gerakan. Gejala dimulai secara bertahap, terkadang dimulai dengan getaran yang hampir tidak terlihat hanya di satu tangan. Gemetar sering terjadi, tetapi kelainan ini juga sering menyebabkan kaku atau lambatnya gerakan. \n\n5. Menurunkan Kadar Gula Darah \n     Manfaat rebusan kayu manis dapat dipercaya dapat menurunkan kadar gula darah. Rempah ini ini memiliki fungsi yang hampir sama dengan insulin di dalam tubuh. Seperti yang diketahui, hormon insulin memiliki peranan yang sangat penting dalam mengontrol gula darah. Selain itu, senyawa yang ditemukan dalam kayu manis dapat berkontribusi lebih jauh untuk menurunkan kadar gula darah dengan menurunkan resistensi insulin, sehingga meningkatkan efektivitas insulin. Kayu manis juga dapat membantu memperlambat pemecahan karbohidrat di usus, sehingga dapat mencegah kadar gula darah melonjak setelah makan. \n\n6. Membantu Melawan Bakteri dan Jamur di Tubuh \n     Kayu manis memiliki beberapa sifat antibakteri dan antijamur yang kuat. Penelitian menggunakan tabung reaksi menunjukkan bahwa cinnamaldehyde, komponen aktif utama dalam kayu manis, mencegah pertumbuhan berbagai bakteri dan jamur. Termasuk bakteri Staphylococcus, Salmonella, dan E. coli yang umum, yang dapat menyebabkan penyakit pada manusia. Selain itu, efek antibakteri kayu manis dapat membantu mengurangi bau mulut dan mencegah kerusakan gigi."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Wedang Jahe Kayu Manis \n\nBahan-bahan membuat wedang jahe kayu manis: \n- 2 rimpang jahe (memarkan/geprek) \n- 1 batang serai(memarkan) \n- Gula aren atau gula jawa (secukupnya) \n- 1/2 sdt bubuk kayu manis atau 1 batang kayu manis \n- 1 liter air \n- Madu (secukupnya) \n\nCara membuat wedang jahe kayu manis: \n1. Siapkan wadah untuk merebus bahan minuman. \n2. Masukkan air ke dalam wadah lalu panaskan dengan api sedang. \n3. Masukkan jahe, serai, gula aren dan kayu manis ke dalam air. \n4. Masak hingga mendidih dan jahe pun beraroma wangi. \n5. Jika sudah mendidih, masukkan madu sesuai selera agar rasanya makin nikmat. \n6. Aduk sebentar lalu angkat. \n7. Saring air wedang dan masukkan ke dalam gelas saji. \n8. Nikmati selagi hangat. "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

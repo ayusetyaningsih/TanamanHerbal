@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemuHitam">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/temu_hitam"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Temu Hitam (Curcuma aeruginosa)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Temu ireng dalam bahasa daerah dikenal dengan beberapa nama, antara lain : temu hitam (Minang), koneng hideung (Sunda), temu ireng (Jawa), temu ereng (Madura), dan temu irang (Sumatra). Tanaman ini berasal dari Burma, kemudian menyebar ke daerah-daerah tropis lainnya, terutama di wilayah Indo-Malaya, termasuk Indonesia (Rahmat, 2004). \n\n     Tinggi tanaman temu ireng mencapai 2 m dan lebar rumpun 26,90 cm jika ditanam di dataran rendah, tiap rumpun dapat menghasilkan 12 anakan, sedangkan di dataran tinggi hanya sekitar 5 anakan perrumpun. Permukaan daun bagian atas bergaris menyirip dan pinggiran daun rata. Daun tidak berbulu dan ibu tulang daun atau kedua sisinya berwarna cokelat merah sampai ungu. Ukuran panjang daun rata-rata 39,20 cm dan lebar 12,20 cm. Jumlah daun mencapai enam helai per rumpun. Tanaman ini berbunga pada umur lima bulan. Bunga berwarna ungu, sedangkan tangkai bunga berwarna hijau. Rimpang dipotong melintang akan berwarna putih dan berbentuk cincin. Rimpang diiris-iris sehingga akan tampak seperti cincin berwarna biru atau kelabu. Kulit rimpang tua umumnya berwarna putih kotor, sedangkan dagingnya kelabu. Rimpang cukup harum dan berasa getir. Kedalaman rimpang sekitar 11,60 cm; dengan panjang akar 17 cm, ketebalan rimpang muda sekitar 2,20 cm. Jumlah rimpang tua rumpun sekitar Sembilan buah; sedangkan rimpang muda sekitar lima buah. Komponen utama yang terkandung dalam minyak rimpang temu ireng terdiri atas terpen, alkohol, ester, mineral, minyak atsiri, lemak, damar, dan kurkumin (Rahmat, 2004).\n\n     Temu ireng mengandung minyak atsiri (turmerone,zingiberene), kurkuminoid, alkaloid, saponin, pati, damar atau getah dan lemak (Setiyono,2014).Zat warna kuning kurkuminoid terdiri dari 62% kurkumin dan 38% desmetoksikurkumin (Sari, 2008). Menurut Martha Tilaar Innovation Center (MTIC), kadar minyak atsiri temu ireng sebanyak 2%. Disamping itu, tanaman inimengandung flavonoid dan polifenol (Nugrahaningtyas et al., 2005). Rimpang temu ireng merupakan salah satu tanaman obat tradisional yang dapat dimanfaatkan sebagai obat cacing (anthelmintik) (Putri, 2009). Kurkuminoid diketahui memiliki efek antitoksin (Setiyono, 2014) dan flavonoid berkhasiat sebagai antihipertensi, merangsang pembentukan estrogen, antifungal dan insektisida (Nugrahaningtyas et al., 2005)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

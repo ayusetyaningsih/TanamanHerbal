@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepSerehDapur">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/sereh_dapur"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Sereh Dapur"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Menangkal Penyakit \n     Aktivitas senyawa antioksidan pada ramuan serai dapat memberikan manfaat berupa perlindungan dari radikal bebas, membantu dalam menjaga kadar kolesterol tetap seimbang, serta meningkatkan kekebalan tubuh. Berkat antioksidannya pula, mengonsumi teh atau minuman mengandung serai akan bantu menjauhkan Anda dari risiko penyakit kronis seperti diabetes tipe 2, kanker, dan obesitas.\n\n2. Sebagai Aromaterapi Pengusir Nyamuk \n     Serai juga juga diketahui dan dimanfaatkan sebagai aromaterapi oleh bangsa India dan Timur Tengah. Di Indonesia sendiri, batang serai ditumbuk dan didiamkan beberapa saat setelah tidur, untuk membantu mengusir nyamuk yang menyebabkan gatal dan demam berdarah. \n\n3. Mencegah Naiknya Kolesterol \n     Daun dan akar serai memiliki sifat anti-hiperlipidemia dan sifat anti-hiperkolesterolemia yang membantu menghasilkan kadar kolesterol yang sehat. Penelitian telah menunjukkan bahwa mengonsumsi rutin teh serai, telah menunjukkan hasil yang signifikan dalam mempertahankan tingkat trigliserida dan mengurangi kolesterol jahat (LDL) dalam tubuh. \n\n4. Detoksifikasi \n     Manfaat sereh lainnya yaitu dapat membantu membersihkan zat-zat beracun berbahaya yang masuk ke dalam tubuh. Detoksifikasi dengan tanaman serai membantu membantu melancarkan fungsi berbagai organ tubuh, termasuk fungsi hati dan ginjal. Mengonsumsi teh serai juga dapat berkhasiat melancarkan buang air kecil. \n\n5. Mengobati Insomnia \n     Manfaat selanjutnya, sereh didapuk berkhasiat membantu untuk menenangkan otot-otot dan saraf yang membantu Anda lebih nyenyak saat tidur dan bantu mengobati insomnia. Penelitian telah menunjukkan bahwa teh serai memiliki obat penenang dan zat hipnotis yang bisa membantu dalam meningkatkan waktu dan kualitas tidur. \n\n6. Mengobati Penyakit ISK dan Penyakit Kulit \n     Sereh dapat bekerja sebagai antiseptik dan efektif dalam mengobati penyakit kulit karena infeksi seperti kurap, luka, kudis, dan juga infeksi saluran kencing (ISK) karena mengandung sifat anti-mikrobanya yang mampu membasmi jamur pada tubuh. Penelitian menunjukkan bahwa ekstrak serai menimbulkan efek baik pada infeksi kulit. Jamur patogen pada kulit akan lenyap jika Anda rajin mengoleskan ekstrak serai pada kulit yang bermasalah. \n\n7. Bantu Mengatasi Sindrom Prahaid \n     Konsumsi sereh dapat menimbulkan efek diuretik, artinya rempah satu ini dapat merangsang organ ginjal untuk mengeluarkan lebih banyak urine dari biasanya. Khasiatnya bahkan pernah dibuktikan dalam sebuah studi skala kecil yang terbit pada Journal of Renal Nutrition. Penelitian tersebut menunjukkan bahwa minum air sereh dapat meningkatkan produksi urine lebih banyak dari minuman lain. Efek ini tentunya sangat bermanfaat, terutama bagi Anda yang sedang mengalami sindrom prahaid. Hal itu mengingat pada saat-saat tersebut tubuh biasanya mengalami retensi (penyimpanan) air."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Teh Sereh \n\nLangkah-langkah membuat teh sereh: \n1. Potong batang sereh menjadi 2 – 5 cm per potongan. \n2. Tuang air mendidih ke atas potongan batang sereh. \n3. Biarkan batang sereh bercampur dengan air selama 5 menit. \n4. Saring air yang sudah tercampur dengan potongan sereh ke dalam gelas atau cangkir teh. \n5. Tambahkan es batu jika Anda ingin meminumnya dalam keadaan dingin. \n\n2. Limun Sereh \n\nLangkah-langkah membuat limun sereh: \n1. Potong dan cuci kedua tanaman sereh hingga bersih. \n2. Rebus 1 gelas air di dalam panci. \n3. Masukkan sereh ke dalam air yang mendidih dan biarkan selama 4 menit. \n4. Saring untuk memisahkan air dengan potongan sereh. \n5. Tambahkan satu gelas air dingin yang sudah dicampur dengan jus lemon, garam, dan gula. \n6. Campurkan sereh yang sudah disaring dengan air lemon ke dalam blender. \n7. Tambahkan es batu sesuai dengan selera. \n\n3. Teh Jahe Sereh \n\nLangkah-langkah membuat teh jahe sereh: \n1. Masukkan 3 batang sereh, jahe, dan juga gula aren atau gula merah ke dalam panci. \n2. Masak hingga gula aren mencair dan air tersisa sampai 200 ml. \n3. Aduk hingga mengeluarkan wangi khas tanaman sereh. \n4. Tuangkan ke dalam gelas atau cangkir teh."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

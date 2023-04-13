@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Temulawak">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/temulawak"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Temulawak (Curcuma xanthorrhiza)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Tanaman temulawak (Curcuma zanthorrihiza L.) merupakan tanaman asli Indonesia yang tumbuh liar di hutan-hutan jati di Jawa dan Madura. Tumbuhan semak berumur tahunan, batang semunya terdiri dari pelepah-pelepah daun yang menyatu, mempunyai umbi batang. Tinggi tanaman antara 50-200 cm, bunganya berwarna putih kemerah-merahan atau kuning bertangkai 1,5-3 cm berkelompok 3 sampai 4 buah. Tumbuhan ini tumbuh subur pada tanah gembur, dan termasuk jenis temu-temuan yang sering berbunga. Panen dapat dilakukan pada umur 7-12 bulan setelah tanam atau daun telah menguning dan gugur. Sebagai bahan tanaman untuk bibit digunakan tanaman sehat berumur 12 bulan (Hayani, 2006).\n\n     Temulawak termasuk tanaman tahunan yang tumbuh merumpun dengan habitus mencapai ketinggian 2-2,5 meter. Tiap rumpun tanaman ini terdiri atas beberapa anakan dan tiap anakan memiliki 2-9 helai daun. Daun temulawak bentuknya panjang dan agak lebar. Panjang daunnya sekitar 50-55 cm dan lebar ± 18 cm. Warna bunga umumnya kuning dengan kelopak bunga kuning tua dan pangkal bunganya berwarna ungu. Rimpang temulawak bentuknya bulat seperti telur dengan warna kulit rimpang sewaktu masih muda maupun tua adalah kuning kotor. Warna daging rimpang adalah kuning dengan cita rasa pahit, berbau tajam dan keharumannya sedang. Untuk sistem perakaran tanaman temulawak termasuk tanaman yang berakar serabut dengan panjang akar sekitar 25 cm dan letaknya tidak beraturan (Anonymous, 2013)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaRosella">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_rosella"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Rosella (Hibiscus sabdariffa)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Tanaman rosella (Hibiscus sabdariffa) adalah sejenis semak (perdu) yang ada di seluruh wilayah tropis dunia. Asal rosella Florida Cranberry adalah dari Afrika Barat. Masyarakat pada umumnya telah mengenal kenaf atau rosella (Hibiscus cannabinus) sebagai tanaman penghasil serat karung dan kembang sepatu (Hibiscus rosasinensis). Sedangkan bunga rosella merah (Hibiscus sabdariffa Lynn), belum begitu dikenal. Bunga rosella merah (Hibiscus sabdariffa Lynn), dikenal di berbagai negara dengan nama yang berbeda-beda, diantaranya ialah, India Barat (Jamaican Sorrel ), Perancis (Oseille Rouge), Spanyol (QuimbomboChino), Afrika Utara (Carcade), dan Senegal (Bisap), Indonesia (Vinagreira, Zuring, Carcade, atau asam Citrun). Dalam bahasa Melayu, tanaman ini dikenal dengan nama asam paya, Asam kumbang atau asam susur (Mulyamin, 2009).\n\n     Di Indonesia nama rosella sudah dikenal sejak tahun 1922, tanaman rosella tumbuh subur, terutama di musim hujan. Tanaman rosella biasanya dipakai sebagai tanaman hias dan pagar. Setelah bertahun-tahun dikenal sebagai tanaman hias dan pagar yang tidak dihiraukan, sekarang tanaman ini dikenal dengan banyak khasiat yang bermanfaat bagi manusia (Daryanto-Agrina, 2006).\n\n     Tanaman rosella berkembang biak dengan biji, tanaman ini tumbuh di daerah yang beriklim tropis dan sub tropis. Tanaman ini dapat tumbuh di semua jenis tanah, tetapi paling cocok pada tanah yang subur dan gembur. Tumbuhan ini dapat tumbuh di daerah pantai sampai daerah dengan ketinggian 900 m di atas permukaan laut. Rosella mulai berbunga pada umur 2-3 bulan, dan dapat dipanen setelah berumur 5-6 bulan. Setelah bunga dipetik kemudian dikeluarkan bijinya, lalu bunga itu dijemur dibawah sinar matahari. Satu batang rosella bisa menghasilkan 2-3 kg bunga rosella basah, dalam 100 kg bunga rosella basah bisa menghasilkan 5-6 kg rosella kering (Andiex, 2009).\n\n     Rosella mengandung senyawa kimia diantaranya senyawa gossipetin, antosianin, dan glukosida hibiscin. Serta merupakan salah satu tanaman kaya antosianin sebagai antioksidan. Antosianin merupakan pigmen warna alami yang memberi warna merah pada seduhan kelopak bunga rosella dan bersifat antioksidan. Penelitian Tsai dkk. (2002) menyebutkan bahwa sebanyak 85% antosianin pada Rosellaberupa delphinidin-3- sambubioside dan cyanidin-3- sambubioside berpotensi mencegah berbagai penyakit kronis. Bunga Rosella juga kaya akan komponen nutrisi penting; seperti vitamin, mineral, asamamino esensial, serat pangan, dan protein (Widyanto dan Nelistya, 2008)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

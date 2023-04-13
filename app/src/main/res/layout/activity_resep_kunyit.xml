@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepKunyit">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/kunyit"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Kunyit"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Antiinflamasi \n     Inflamasi adalah salah satu respons tubuh yang alami. Sebabnya, yaitu kuman, bahan kimia, dan pola makan yang buruk. Kendati begitu, terdapat fakta yang menemukan bahwa mengkonsumsi jahe dapat menyembuhkan inflamasi atau peradangan.\n\n2. Antioksidan \n     Sifat antioksidan dari jahe dapat membantu mencegah: penyakit jantung; penyakit neurodegeneratif, seperti Parkinson, Alzheimer, dan Huntington; kanker; gejala penuaan. Bahkan, antioksidan dari jahe dapat melawan spesies oksigen reaktif (ROS). ROS dapat menyebabkan stres oksidatif dan merusak sel tubuh. \n\n3. Antimual \n     Meminum air jahe dapat meredakan mual bahkan gangguan pencernaan lainnya. Kendati begitu, belum ada studi yang meyakinkan seberapa efektif cara ini. \n\n4. Menyeimbangkan gula darah \n     Meski terdapat studi yang mengatakan bahwa jahe meningkatkan gula darah, tapi beberapa temuan lain menyatakan bahwa meminum air jahe dapat membantu mengobati masalah kesehatan yang disebabkan oleh diabetes kronis. \n\n5. Kolesterol \n     Terdapat suatu studi yang menyatakan, bahwa baru-baru ini bahwa jahe mampu mengurangi gejala penyakit jantung, seperti aktivitas arginase dan kolesterol LDL ( jahat). \n\n6. Penurunan berat badan \n     Meminum air jahe dapat membantu menurunkan berat badan, apalagi bila dikombinasikan dengan diet sehat dan olahraga. Satu studi menunjukkan bahwa jahe menekan obesitas pada seekor tikus yang memiliki lemak dengan jumlah tinggi. Selain itu, ditemukan pula penelitian lain yang menyatakan bahwa setelah seorang pria meminum jahe panas, ia akan merasa kenyang lebih lama. Maka itu, minum air jahe pun dapat mencegah gula darah. \n\n7. Hidrasi \n     Meminum air jahe bisa menghidrasi, karena adanya air di dalam larutan jahe. Kendati begitu, tetap terhidrasi sangatlah penting untuk mendukung setiap aspek kesehatan dalam tubuh."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Taburkan jahe bubuk, beberapa iris jahe, atau akar jahe ke dalam gelas berisi air \n2. Panaskan jahe dan air agar dapat meresap selama 10 menit \n3. Tambahkan madu, jeruk nipis, atau lemon secukupnya \n4. Diginkan air jahe sebelum diminum."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

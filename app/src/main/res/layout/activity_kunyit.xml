@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kunyit">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/kunyit"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kunyit (Curcuma longa Linn)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Kunyit merupakan tanaman obat berupa semak dan bersifat tahunan (perenial) yang tersebar di seluruh daerah tropis. Tanaman kunyit tumbuh subur dan liar disekitar hutan/bekas kebun. Diperkirakan berasal dari Binar pada ketinggian 1300-1600 m dpl, ada juga yang mengatakan bahwa kunyit berasal dari India. Kata Curcuma berasal dari bahasa Arab Kurkum dan Yunani Karkom. Pada tahun 77-78 SM, Dioscorides menyebut tanaman ini sebagai Cyperus menyerupai jahe, tetapi pahit, kelat, dan sedikit pedas, tetapi tidak beracun. Tanaman ini banyak dibudidayakan di Asia Selatan khususnya di India, Cina Selatan, Taiwan, Indonesia, dan Filipina. Beberapa penelitian membutikkan bahwa tanaman sangat potensial sebagai obat (diuretika, tonik dan aphrodisiaka), serta arah pengembangan obat tradisional (jamu) di Indonesia untuk menghasilkan fitofarmaka (Anonim, 2010).\n\n     Tanaman kunyit tumbuh bercabang dengan tinggi 40-100 cm. Batang merupakan batang semu, tegak, bulat, membentuk rimpang dengan warna hijau kekuningan dan tersusun dari pelepah daun (agak lunak). Daun tunggal, bentuk bulat telur (lanset) memanjang hingga 10-40 cm, lebar 8-12,5 cm dan pertulangan menyirip dengan warna hijau pucat. Berbunga majemuk yang berambut dan bersisik dari pucuk batang semu, panjang 10-15 cm dengan mahkota sekitar 3 cm dan lebar 1,5 cm, berwarna putih/kekuningan. Ujung dan pangkal daun runcing, tepi daun yang rata. Kulit luar rimpang berwarna jingga kecoklatan, daging buah merah jingga kekuning-kuningan (Hartati Balittro., 2013).\n\n     Rimpang kunyit bercabang-cabang sehingga membentuk rimpun. Rimpang berbentuk bulat panjang dan membentuk cabang rimpang berupa batang yang berada didalam tanah. Rimpang kunyit terdiri dari rimpang induk atau umbi kunyit dan tunas atau cabang rimpang. Rimpang utama ini biasanya ditumbuhi tunas yang tumbuh kearah samping, mendatar, atau melengkung. Tunas berbuku-buku pendek, lurus atau melengkung. Jumlah tunas umumnya banyak. Tinggi anakan mencapai 10,85 cm (Winarto, 2004).\n\n     Warna kulit rimpang jingga kecoklatan atau berwarna terang agak kuning kehitaman. Warna daging rimpangnya jingga kekuningan dilengkapi dengan bau khas yang rasanya agak pahit dan pedas. Rimpang cabang tanaman kunyit akan berkembang secara terus menerus membentuk cabang-cabang baru dan batang semu, sehingga berbentuk sebuah rumpun. Lebar rumpun mencapai 24,10 cm. panjang rimpang bias mencapai 22,5 cm. tebal rimpang yang tua 4,06 cm dan rimpang muda 1,61 cm. rimpang kunyit yang sudah besar dan tua merupakan bagian yang dominan sebagai obat (Winarto, 2004)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

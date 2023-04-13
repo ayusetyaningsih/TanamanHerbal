@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cengkeh">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/cengkeh"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cengkeh (Syzygium aromaticum)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Cengkeh (Syzygium aromaticum), termasuk dalam famili Myrtaceae dan merupakan salah satu tanaman rempah asli Indonesia yang berasal dari Kepulauan Maluku. Penanganan pasca panen cengkeh di tingkat petani masih dilakukan dengan cara manual, salah satunya pemisahan bunga dari tangkainya yang masih menggunakan tangan. Bunga dan tangkai cengkeh perlu dipisahkan karena mempunyai harga dan mutu yang berbeda. Tujuan penelitian ini adalah untuk mengetahui daya lekat bunga cengkeh terhadap tangkainya dan karateristik fisik (dimensi, berat dan kadar air) bunga cengkeh pada varietas Zanzibar, Si-Putih dan Si-Kotok. Daya lekat dimaksudkan sebagai gaya yang dibutuhkan untuk melepaskan bunga cengkeh dari tangkainya agar dapat menjadi acuan dan referensi dasar dalam perancangan alat pemisah bunga cengkeh dari tangkainya atau alat processing lainnya. Penelitian ini menggunakan sampel bunga cengkeh varietas Zanzibar, Si-Putih dan Si-Kotok berdasarkan warna bunga (tingkat kematangan). Hasil penelitian ini menunjukkan bahwa daya lekat yang diperoleh bunga cengkeh varietas Si-Kotok sebesar 0.22 kg, varietas Zanzibar sebesar 0.17 kg dan varietas Si-Putih sebesar 0.15 kg. Dari sisi warna, daya lekat bunga cengkeh warna merah sebesar 0.22 kg, warna merah hijau sebesar 0.17 kg dan warna hijau sebesar 0.16 kg. Daya lekat bunga cengkeh tidak memiliki korelasi yang konsisten dengan parameter sifat fisik bunga cengkeh.\n\n     Tanaman cengkeh dikenal sebagai tanaman rempah yang digunakan sebagai obat tradisional maupun modern. Cengkeh juga banyak digunakan dalam industri sebagai pembuatan rokok kretek, bahan pembuatan minyak atsiri, bahan baku pembuatan vanillin dan bahan parfum.\n\n     Untuk mendapatkan hasil yang bermutu baik, masalah pengolahan pasca panen cengkeh juga perlu untuk diperhatikan dengan seksama. Penanganan pasca panen cengkeh ditingkat petani masih dilakukan dengan cara tradisional, salah satunya pemisahan bunga dari tangkainya yang masih menggunakan tangan sehingga membutuhkan waktu yang lama. Bunga dan tangkai cengkeh perlu dipisahkan karena mempunyai harga dan mutu yang berbeda. Dengan kondisi tersebut maka perlu dilakukan penelitian untuk mengetahui daya lekat bunga cengkeh terhadap tangkainya agar dapat menjadi acuan dan referensi dalam perancangan alat pemisah bunga cengkeh dari tangkainya atau alat processing lainnya. "
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

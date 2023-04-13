@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BungaTuri">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/bunga_turi"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bunga Turi (Sesbania grandiflora)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Tanaman"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="\n     Turi (Sesbania grandiflora) merupakan tanaman yang dibudidayakan di Afrika selama kurang lebih 140 tahun. Kini turi telah tersebar ke berbagai daerah tropis di dunia seperti Asia Selatan dan Asia Tenggara. Tanaman turi dikenal dengan berbagai nama seperti turi (Jawa), toroy (Madura), tuli turi (Sumatera), kaju jawa (Sulawesi), tuwi (Nusa Tenggara) (Yuniarti,2008).\n\n     Tumbuhan ini merupakan pohon kecil dengan tingginya mulai dari 8-15 meter dan memiliki diameter 25-30 cm. Turi memiliki ranting yang kerap kali menggantung. Kulit luar berwarna kelabu hingga kecoklatan, tidak rata, dengan alur membujur dan melintang tidak beraturan,lapisan gabus yang mudah terkelupas. Di bagian dalam berair dan sedikit berlendir. Percabangan baru akan keluar setelah tinggi tanaman mencapai sekitar 5 m. Berdaun majemuk yang letaknya tersebar, dengan daun penumpu yang panjangnya 0,5-1 cm. Panjang daun 15-30 cm, menyirip genap dan 12-20 pasang anak daun yang bertangkai pendek. Helaian anak daun berbentuk jorong memanjang, tepi rata, panjang 3-4 cm dan lebar 1 cm. Bunganya besar dalam tandan yang keluar dari ketiak daun, letaknya menggantung dengan 2-5 bunga yang bertangkai, kuncupnya berbentuk sabit, panjangnya 5-10 cm, ada yang berwarna merah muda dan putih. Bila mekar, bunganya berbentuk kupu-kupu. Buah bentuk polong yang menggantung, berbentuk pita dengan sekat antara, panjang 30-50 cm, lebar 7-8 mm. Biji 15-40, letak melintang di dalam polong (Orwa et al., 2009). Turi terdiri dari 2 varietas, yaitu turi berbunga putih dan turi berbunga merah. Secara empiris turi merah digunakan sebagai obat karena kandungan kimia seperti tannin, saponin, glikosida, peroksidase, vitamin A dan B, egatin, zantoegatin, basorin, resin, calsium oksalat, sulfur, zat besi dan zat gula lebih banyak daripada turi putih. Salah satu kegunaannya sebagai analgetik (penurun rasa nyeri) dengan menggunakan kortex batang dan daunnya (Steenis dkk., 2013)."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

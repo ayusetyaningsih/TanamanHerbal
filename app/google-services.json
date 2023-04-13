@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618354526169",
+    "project_id": "tanamanherbal-2ad05",
+    "storage_bucket": "tanamanherbal-2ad05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618354526169:android:9f4631ad36c7874aa47bc8",
+        "android_client_info": {
+          "package_name": "com.example.tanamanherbal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618354526169-v4bgibpkf921mnna3tbv65j13iqcunpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz7L3xTZ8PL6dUxP563JAMM3PdEjqV9W0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618354526169-v4bgibpkf921mnna3tbv65j13iqcunpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResepTemuHitam">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageTanaman"
+            android:background="@drawable/temu_hitam"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_rounded"
+        android:paddingStart="10dp"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ADFFB0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_shape"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat dan Resep Obat"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manfaat Temu Hitam"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Menyembuhkan Luka \n     Luka akan menimbulkan kerusakan kulit, jaringan otot, bahkan sampai tulang. Luka terdiri dari beberapa kategori yaitu luka abrasi (lecet), luka laserasi (luka robek), luka kontusio (luka memar), dan luka tusuk. Manfaat temu ireng dapat Moms dan Dads gunakan untuk mempercepat penyembuhan berbagai luka di atas. \nIa mengandung senyawa yang berperan sebagai antibakteri. senyawa tersebut dapat membunuh bakteri-bakteri yang dapat menyebabkan infeksi pada luka. \n\n2. Melawan Bakteri \n     Mengutip dari hasil penelitian Institut Pertanian Bogor, temu ireng merupakan tanaman yang pada umumnya dimanfaatkan sebagai obat herbal karena mengandung berbagai senyawa bioaktif. Penelitian ini memperoleh ekstraksi fenolik optimum dari rimpang temu ireng yang berpengaruh terhadap kandungan total flavonoid, dan menemukan adanya aktivitas antibakteri untuk bakteri staphylococcus aureus dan escherichia coli. Karena kandungan flavonoid ini, manfaat temu ireng untuk melawan bakteri dapat dirasakan. \n\n3. Menambah Nafsu Makan \n     Temu hitam dapat diberikan untuk anak-anak yang mengalami masalah sulit makan, terutama yang sedang dalam masa pertumbuhan. Khasiatnya juga dipercaya dapat membantu menyehatkan saluran pencernaan sehingga membuat nafsu makan anak meningkat. Temu ireng juga membantu menghilangkan kolik yang dapat mempengaruhi saluran pencernaan. Kandungan kurkumin yang terdapat dalamnya adalah bagian penting yang berperan dalam kesehatan pencernaan. Karena itu, banyak obat herbal dan ramuan jamu yang menggunakan khasiat temu ireng sebagai salah satu bahan alami penambah nafsu makan anak. \n\n4. Mengobati Cacingan \n     Khasiat temu ireng juga telah dimanfaatkan oleh masyarakat sebagai obat untuk mengatasi cacingan. Temu ireng dalam bentuk perasan maupun infusa ternyata banyak dipakai sebagai sarana pengobatan bagi anak-anak. Anak-anak yang biasanya sangat aktif dan suka mengeksplorasi, tidak terkecuali bermain di tempat yang kotor. Telur dan larva cacing yang kecil bisa hidup di permukaan tanah dan sangat mungkin menginfeksi anak. Kandungan senyawa sesquiterpene dalam tanaman ini memiliki peran sebagai anti cacing atau antelmintik. \n\n5. Sumber Antioksidan \n     Antioksidan adalah senyawa yang dapat menangkal radikal bebas. Radikal bebas adalah zat perusak sel yang di kemudian hari dapat menjadi penyebab berbagai penyakit yang berkaitan dengan oksidasi, seperti kardiovaskuler dan juga kanker. Antioksidan alami telah tersedia di dalam tubuh kita, namun, antioksidan tambahan juga bisa kita dapatkan melalui makanan yang mengandung senyawa flavonoid dan juga fenolik seperti yang terkandung dalam rimpang temu ireng. Oleh karena itu, khasiat temu ireng juga berfungsi sebagai antioksidan yang dapat melawan radikal bebas."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resep"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvManfaatTanaman1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="20dp"
+                        android:text="1. Untuk Nafsu Makan \n\nBahan-bahan yang dibutuhkan : \n- 100 gram temu hitam \n- 200 gram rimpang temu lawak \n- 750ml air untuk merebus \nCara membuatnya : \n1. Cuci bersih rimpang dan temu lawak lalu potong-potong. \n2. Rebus dengan 750ml air, sampai rebusan tinggal 500ml. \n3. Diminum setelah dingin.\n\n2. Untuk Perawatan Kulit Luar \n\nBahan-bahan yang dibutuhkan : \n- 25 gram temu hitam \n- 1 sdm minyak kelapa \nCara membuatnya : \n1. Tumbuk atau parut temu hitam \n2. Tambahkan 1 sdm minyak kelapa \n3. Aduk-aduk, setelah itu oleskan ramuan temu hitam ke bagian kulit yang bermasalah \n\n3. Untuk Perawatan Kulit Dalam \n\nBahan-bahan yang dibutuhkan : \n- 2 ruas jari temu hitam \n- 1 gelas air untuk merebus \nCara membuatnya : \n1. Cuci bersih temu hitam kemudian potong \n2. Rebus irisan rimpang dengan 1 gelas air \n3. Setelah mendidih kemudian saring \n4. Minum selagi hangat"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

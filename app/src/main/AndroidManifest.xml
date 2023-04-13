@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tanamanherbal">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ResepKayuManis"
+            android:exported="true" />
+        <activity
+            android:name=".ResepSirih"
+            android:exported="true" />
+        <activity
+            android:name=".ResepSerehDapur"
+            android:exported="true" />
+        <activity
+            android:name=".ResepTemuGiring"
+            android:exported="true" />
+        <activity
+            android:name=".ResepTemuHitam"
+            android:exported="true" />
+        <activity
+            android:name=".ResepCengkeh"
+            android:exported="true" />
+        <activity
+            android:name=".ResepSambiloto"
+            android:exported="true" />
+        <activity
+            android:name=".ResepTemulawak"
+            android:exported="true" />
+        <activity
+            android:name=".ResepKunyit"
+            android:exported="true" />
+        <activity
+            android:name=".ResepJahe"
+            android:exported="true" />
+        <activity
+            android:name=".ResepLengkuas"
+            android:exported="true" />
+        <activity
+            android:name=".BungaSepatu"
+            android:exported="true" />
+        <activity
+            android:name=".BungaMelati"
+            android:exported="true" />
+        <activity
+            android:name=".BungaKecombrang"
+            android:exported="true" />
+        <activity
+            android:name=".BungaTuri"
+            android:exported="true" />
+        <activity
+            android:name=".BungaSaffron"
+            android:exported="true" />
+        <activity
+            android:name=".BungaRosella"
+            android:exported="true" />
+        <activity
+            android:name=".BungaMawar"
+            android:exported="true" />
+        <activity
+            android:name=".BungaLawang"
+            android:exported="true" />
+        <activity
+            android:name=".BungaTelang"
+            android:exported="true" />
+        <activity
+            android:name=".BungaTapakDara"
+            android:exported="true" />
+        <activity
+            android:name=".KayuManis"
+            android:exported="true" />
+        <activity
+            android:name=".Sirih"
+            android:exported="true" />
+        <activity
+            android:name=".SerehDapur"
+            android:exported="true" />
+        <activity
+            android:name=".TemuGiring"
+            android:exported="true" />
+        <activity
+            android:name=".TemuHitam"
+            android:exported="true" />
+        <activity
+            android:name=".Cengkeh"
+            android:exported="true" />
+        <activity
+            android:name=".Sambiloto"
+            android:exported="true" />
+        <activity
+            android:name=".Temulawak"
+            android:exported="true" />
+        <activity
+            android:name=".Kunyit"
+            android:exported="true" />
+        <activity
+            android:name=".Jahe"
+            android:exported="true" />
+        <activity
+            android:name=".Lengkuas"
+            android:exported="true" />
+        <activity
+            android:name=".ResepObat"
+            android:exported="true" />
+        <activity
+            android:name=".ObatBunga"
+            android:exported="true" />
+        <activity
+            android:name=".TanamanHerbal"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".MenuUtama"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
